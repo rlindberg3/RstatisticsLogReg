@@ -89,8 +89,8 @@ cbind(predDat, predict(hyp.out, type = "response",
 
 ##   Instead of doing all this ourselves, we can use the effects package to
 ##   compute quantities of interest for us (cf. the Zelig package).
-install.packages("effects")
-library("effects")
+
+library(effects)
 plot(allEffects(hyp.out))
 
 ## Exercise: logistic regression
